@@ -1,0 +1,154 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f1e4;
+    color: #3c2d1e;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #6a5633;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #d3b893;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #a57d4f;
+}
+
+.organizations {
+    margin-top: 50px;
+}
+
+.organizations h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.organization-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.organization-card {
+    background-color: #d3b893;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.organization-logo {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+    border-radius: 8px;
+    overflow: hidden;  /* Ensures any overflow from images is hidden */
+    background-color: #f8f1e4;  /* Placeholder color in case the image doesn't load */
+}
+
+.organization-logo img {
+    width: 100%;            /* Ensures the image fills the width of the container */
+    height: 100%;           /* Ensures the image fills the height of the container */
+    object-fit: contain;    /* The image will be scaled to fit the container while maintaining aspect ratio */
+    display: block;         /* Removes any default inline spacing around images */
+}
+
+.organization-card p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #3c2d1e;
+}
+.img {
+    width: 100%;             /* Full width of the container */
+    height: 100%;            /* Full height of the container */
+    object-fit: cover;       /* Ensures the image covers the container without distortion */
+    display: block;          /* Removes any extra space below the image */
+    border-radius: inherit;  /* Ensures the image inherits the container's border-radius */
+}
+
+
+.img:hover {
+    transform: scale(1.05);  /* Slightly enlarges the image on hover */
+}
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}

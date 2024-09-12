@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funding Program</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Support Our Funding Program</h1>
+            <p>Your donation will help us empower more organizations and make a real impact.</p>
+            <div class="buttons">
+                <button class="btn donate" id="donateButton">Donate</button>
+                <button class="btn join" id="joinButton">Join Funding Program</button>
+            </div>
+        </header>
+
+        <section class="organizations">
+            <h2>Participating Organizations</h2>
+            <div class="organization-list">
+                <!-- Existing organization cards -->
+                <div class="organization-card">
+                    <div class="organization-logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/480px-Google_%22G%22_logo.svg.png" alt="Google Logo">
+                    </div>
+                    <p>Google</p>
+                </div>
+                <div class="organization-card">
+                    <div class="organization-logo">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMwAAADACAMAAAB/Pny7AAAAn1BMVEWBvAb/uggFpvDzUyXz8/P/tADz9Pbz8/H29Pbz9/j29Pj59vPy9fn/+fPz8fLz/v/79//43bHzrqG/2KF3twDz5+WXxk3z3Njh6tb25crj7fMAn/AAo/DzQADzn47q7uTzclXJ4fJBrvD07uSy1vK01IfzTBf+v0KGyPH70ofzzMTV48DzMwDzmIav0n3zaU3169n61pP+vTQAmPD7z3wtZuZeAAABhElEQVR4nO3cyTYDURSG0aBSaUSQBulE9E0I4v2fzSCpiqWMLIfI2t8L/HeP7uyUkg2q9NcP+MlyTNoMqpJvVYJKP2PSZiuo+9piof7QDirX5JjudBTS9HF/sXDw1AlqXC1gRjshjU4zzFUpJhgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYmI3EXIf0AdP5LUzSnZ2FNGtlmPZRUEVM8zio7vKITnV8ElR+c2h1q6kWVTZQrQeVFDEbEMy6BrOurTC7UWUDaSOoIiadBNVfatLnXlDFf6Z/HtTt3mKg8fJ6E9PF58tzSX8wDGmQY+7KWyGVv8AMt0OCgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGB+Q5mPghpnmPeykEVMellUJPlEZ1G7zCoSgHzj8ssG4HJewcb/mAatajuPAAAAABJRU5ErkJggg==" alt="Microsoft Logo">
+                    </div>
+                    <p>Microsoft</p>
+                </div>
+                <div class="organization-card">
+                    <div class="organization-logo">
+                        <img src="data:image/png;base64,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" alt="Meta Logo">
+                    </div>
+                    <p>Meta</p>
+                </div>
+                <div class="organization-card">
+                    <div class="organization-logo">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW9ZNmd-RP5nVCD3e1MgAvEnhhcSzU5HDXEvB1OcDaZ5oEX3acv_MQQdd29A&s" alt="OpenAI Logo">
+                    </div>
+                    <p>OpenAI</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="donateModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Thank you for your support!</h2>
+            <p>Your contribution helps us make a difference.</p>
+            <img src="qr.jpeg" alt="Donation Image" class="modal-image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
