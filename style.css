@@ -6,9 +6,9 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f8f1e4;
-    color: #3c2d1e;
+    font-family: monospace;
+   
+    
     line-height: 1.6;
     text-align: center;
 }
@@ -31,26 +31,14 @@ header h1 {
 header p {
     font-size: 1.2rem;
     margin: 20px 0;
-    color: #6a5633;
+    color: #f9d476;
 }
 
 .buttons {
     margin-top: 20px;
 }
 
-button {
-    background-color: #d3b893;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    margin: 10px;
-    transition: background-color 0.3s ease;
-}
 
-button:hover {
-    background-color: #a57d4f;
-}
 
 .organizations {
     margin-top: 50px;
@@ -68,7 +56,7 @@ button:hover {
 }
 
 .organization-card {
-    background-color: #d3b893;
+    background-color: #fbdf99;
     padding: 20px;
     width: 200px;
     text-align: center;
@@ -152,3 +140,32 @@ button:hover {
     border-radius: 10px;
     margin-top: 20px;
 }
+.btn {
+    background-color: #fcd87f;  /* Blue background */
+    color: white;               /* White text */
+    padding: 12px 24px;         /* Padding */
+    border-radius: 10px;        /* Rounded corners */
+    border: none;               /* No border */
+    font-size: 16px;            /* Font size */
+    font-weight: bold;          /* Bold text */
+    cursor: pointer;  
+        /* Pointer on hover */
+        margin-top: 20px;
+        margin-left: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;  /* Smooth transition */
+  }
+  
+  .btn:hover {
+    background-color: black;  /* Darker blue on hover */
+    transform: translateY(-2px); 
+    color: #f1f0f0;/* Slight lift on hover */
+  }
+  
+  .btn:active {
+    background-color: #fdd266;  /* Even darker blue on click */
+    transform: translateY(0);   /* Remove lift on click */
+  }
+  #redirect-btn{
+    margin-left: -100%;
+    margin-top: -40%;
+  }s
