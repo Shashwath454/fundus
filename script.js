@@ -27,3 +27,6 @@ const joinButton = document.getElementById('joinButton');
 joinButton.addEventListener('click', () => {
     window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSeF4I6K5NSJvk2jfEcKySQ1V-mkAVteLSjsuTXlt-DeTLzjzQ/viewform?usp=sf_link'; // Replace with your form URL
 });
+document.getElementById("redirect-btn").onclick = function() {
+    window.location.href = "https://www.google.com";
+  };
